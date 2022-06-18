@@ -44,7 +44,7 @@ Route::prefix('admin')->group(function(){
         return 'Foo Page';
     });
     Route::redirect('bar','foo');
-    Route::view('landing','welcome');
+    Route::view('landing','order-detail');
     // get method caring id or parameter//
     Route::get('user/{user_id}', function($user_id = '') {
         return $user_id;
